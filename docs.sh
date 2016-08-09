@@ -15,7 +15,7 @@ then
     if [[ -e "./doc/api.md" ]]
     then
       echo "Documentation ready. Committing!"
-      git add ./doc/api.md
+      git add --force ./doc/api.md
       git commit -m "update api documentation"
       git push origin $current_branch
       echo "Documentation committed continuing."
