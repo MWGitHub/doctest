@@ -1,0 +1,25 @@
+{
+  "name": "doctest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "docs": "mkdir -p doc && jsdoc2md 'lib/**/*.js' -P  > ./doc/api.md",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "bash ./docs.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MWGitHub/doctest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MWGitHub/doctest/issues"
+  },
+  "homepage": "https://github.com/MWGitHub/doctest#readme",
+  "devDependencies": {
+    "jsdoc-to-markdown": "^1.3.6"
+  }
+}
